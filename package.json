@@ -11,11 +11,23 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "karma": "^6.4.0",
     "karma-coverage": "^2.2.0",
     "karma-firefox-launcher": "^2.1.2",
     "karma-jasmine": "^5.1.0"
-  }
+  },
+  "main": "karma.conf.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/litdawn/MVVM_project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/litdawn/MVVM_project/issues"
+  },
+  "homepage": "https://github.com/litdawn/MVVM_project#readme",
+  "description": ""
 }

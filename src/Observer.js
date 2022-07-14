@@ -1,5 +1,8 @@
 import {isObject} from "./util.js";
 
+/**
+ * @file 数据劫持
+ */
 class Observer{
 	constructor(data) {
 		this.observe(data);
@@ -16,9 +19,9 @@ class Observer{
 
 	/**
 	 * 定义响应式
-	 * @param data 对象
-	 * @param key 属性
-	 * @param value 属性的值
+	 * @param data {Object}对象
+	 * @param key {string}属性
+	 * @param value {string||number||Object}属性的值
 	 */
 	defineReactive(data,key,value){
 		let that = this;

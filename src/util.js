@@ -1,6 +1,7 @@
 /**
  * 是否是元素节点
  * @param node
+ * @return {boolean}
  */
 export function isElementNode(node){
     return node.nodeType === 1;
@@ -8,7 +9,8 @@ export function isElementNode(node){
 
 /**
  * 是否是文本节点
- * @param node
+ * @param node {Object}
+ * @return {boolean}
  */
 export function isTextNode(node){
     return node.nodeType === 3;
@@ -16,6 +18,8 @@ export function isTextNode(node){
 
 /**
  * 是否是指令，即含有d-?=""
+ * @param name {string}
+ * @return {boolean}
  */
 export function isDirective(name){
     return name.indexOf("d-")===0;
@@ -23,16 +27,17 @@ export function isDirective(name){
 
 /**
  * 是否为对象
+ * @return {boolean}
  */
 export function isObject(object){
     return typeof object==='object';
 }
 
 /**
- * 解析{{}}中内容(特别是a.b.c嵌套后)
- * @param vm
- * @param expr
- * @return data中真正的值
+ * 解析对象属性真实值(特别是嵌套后)
+ * @param vm {Object}
+ * @param expr {string}
+ * @return {any}
  */
 export function findValue(vm,expr){
     let locators = expr.split(".");
@@ -44,9 +49,16 @@ export function findValue(vm,expr){
 }
 
 /**
- * 根据解析出的{{}}中的真实值，替换expression中的变量名
+ * 正则寻找插值表达式内容
+ * @type {RegExp}
  */
-const textRE =  /{{([^}]+)}}/g;
+const textRE =  /{{(.+?)}}/g;
+/**
+ *
+ * @param expressionWithDump{string}
+ * @param vm {Object}
+ * @return {string}
+ */
 export  function getTextValue(expressionWithDump,vm){
     let expression = expressionWithDump;
     let content;
@@ -54,6 +66,21 @@ export  function getTextValue(expressionWithDump,vm){
         expression = expression.replace("{{"+content[1]+"}}",findValue(vm,content[1]));
     }
     return expression;
+}
+
+/**
+ * 根据输入框的输入，改变值
+ * @param vm {Object}
+ * @param expr {string}
+ * @param newValue {any}
+ */
+export function setValue(vm,expr,newValue){
+    let locators = expr.split(".");
+    let value = vm.data;
+    for(let i=0;i<locators.length-1;i++){
+        value = value[locators[i]];
+    }
+    value[locators[locators.length-1]]=newValue;
 }
 
 

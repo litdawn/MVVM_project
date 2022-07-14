@@ -1,5 +1,5 @@
 /**
- * 发布订阅
+ * @file 实现发布订阅模式
  */
 class Dep{
 	subscribers;
@@ -9,21 +9,20 @@ class Dep{
 	}
 
 	/**
-	 * 添加订阅者
+	 * 添加订阅目标
 	 * @param watcher
 	 */
 	addSubscriber(watcher){
-		console.log("add",watcher)
 		this.subscribers.push(watcher);
+		console.log(this.subscribers,"in add");
 	}
 
 	/**
-	 * 判断订阅者是否更新
+	 * 判断订阅目标是否更新
 	 */
 	recognize(){
-		console.log("recognize");
+		console.log(this.subscribers,"in rec");
 		this.subscribers.forEach(watcher=>{
-			console.log("rec",watcher)
 			watcher.compare();
 		})
 	}
