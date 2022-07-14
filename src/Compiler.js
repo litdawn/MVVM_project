@@ -12,9 +12,7 @@ class Compiler {
             let fragment = this.toFragment(this.el);
             this.compile(fragment);
             this.el.appendChild(fragment);
-            // fragment=null;
-            // el={}
-            // vm={}
+            fragment=null;
         }
     };
 

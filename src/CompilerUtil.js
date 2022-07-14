@@ -44,15 +44,16 @@ const CompilerUtil ={
     },
 
     //TODO 待补充
-    /**
-     * d-html
-     * @param node
-     * @param vm
-     * @param expression
-     */
-    html(node,vm,expression){
 
-    }
+    // /**
+    //  * d-html
+    //  * @param node
+    //  * @param vm
+    //  * @param expression
+    //  */
+    // html(node,vm,expression){
+    //
+    // }
 }
 
 

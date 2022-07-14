@@ -14,14 +14,14 @@ class Dep{
 	 */
 	addSubscriber(watcher){
 		this.subscribers.push(watcher);
-		console.log(this.subscribers,"in add");
+		// console.log(this.subscribers,"in add");
 	}
 
 	/**
 	 * 判断订阅目标是否更新
 	 */
 	recognize(){
-		console.log(this.subscribers,"in rec");
+		// console.log(this.subscribers,"in rec");
 		this.subscribers.forEach(watcher=>{
 			watcher.compare();
 		})

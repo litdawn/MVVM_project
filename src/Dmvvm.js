@@ -1,5 +1,5 @@
 import Compiler from "./Compiler.js";
-
+import Observer from "./Observer.js";
 /**
  * @file 框架接入点
  */
@@ -17,5 +17,5 @@ class Dmvvm {
         }
     };
 }
-
+export default Dmvvm;
 window.Dmvvm = Dmvvm;

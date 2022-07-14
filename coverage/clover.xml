@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1657807454724" clover="3.2.0">
+  <project timestamp="1657807454724" name="All files">
+    <metrics statements="109" coveredstatements="97" conditionals="26" coveredconditionals="15" methods="35" coveredmethods="31" elements="170" coveredelements="143" complexity="0" loc="109" ncloc="109" packages="1" files="8" classes="8"/>
+    <file name="Compiler.js" path="D:\MVVM_project\src\Compiler.js">
+      <metrics statements="33" coveredstatements="32" conditionals="14" coveredconditionals="9" methods="7" coveredmethods="7"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="9" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="10" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="12" count="2" type="stmt"/>
+      <line num="13" count="2" type="stmt"/>
+      <line num="14" count="2" type="stmt"/>
+      <line num="15" count="2" type="stmt"/>
+      <line num="24" count="2" type="stmt"/>
+      <line num="26" count="2" type="stmt"/>
+      <line num="27" count="4" type="stmt"/>
+      <line num="29" count="2" type="stmt"/>
+      <line num="37" count="6" type="stmt"/>
+      <line num="38" count="6" type="stmt"/>
+      <line num="39" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="40" count="4" type="stmt"/>
+      <line num="41" count="4" type="stmt"/>
+      <line num="42" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="43" count="2" type="stmt"/>
+      <line num="53" count="4" type="stmt"/>
+      <line num="54" count="4" type="stmt"/>
+      <line num="55" count="4" type="stmt"/>
+      <line num="56" count="4" type="stmt"/>
+      <line num="57" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="58" count="2" type="stmt"/>
+      <line num="59" count="2" type="stmt"/>
+      <line num="60" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="61" count="0" type="stmt"/>
+      <line num="63" count="2" type="stmt"/>
+      <line num="74" count="2" type="stmt"/>
+      <line num="75" count="2" type="stmt"/>
+      <line num="76" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="77" count="2" type="stmt"/>
+      <line num="83" count="1" type="stmt"/>
+    </file>
+    <file name="CompilerUtil.js" path="D:\MVVM_project\src\CompilerUtil.js">
+      <metrics statements="13" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="17" count="3" type="stmt"/>
+      <line num="19" count="3" type="stmt"/>
+      <line num="21" count="3" type="stmt"/>
+      <line num="22" count="3" type="stmt"/>
+      <line num="23" count="0" type="stmt"/>
+      <line num="26" count="3" type="stmt"/>
+      <line num="36" count="5" type="stmt"/>
+      <line num="37" count="0" type="stmt"/>
+      <line num="39" count="5" type="stmt"/>
+      <line num="40" count="0" type="stmt"/>
+      <line num="41" count="0" type="stmt"/>
+      <line num="43" count="5" type="stmt"/>
+    </file>
+    <file name="Dep.js" path="D:\MVVM_project\src\Dep.js">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <line num="8" count="7" type="stmt"/>
+      <line num="16" count="13" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+    </file>
+    <file name="Dmvvm.js" path="D:\MVVM_project\src\Dmvvm.js">
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="9" count="2" type="stmt"/>
+      <line num="11" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="13" count="2" type="stmt"/>
+      <line num="16" count="2" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+    </file>
+    <file name="Observer.js" path="D:\MVVM_project\src\Observer.js">
+      <metrics statements="18" coveredstatements="12" conditionals="8" coveredconditionals="4" methods="6" coveredmethods="5"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="12" count="8" type="cond" truecount="2" falsecount="0"/>
+      <line num="13" count="4" type="stmt"/>
+      <line num="14" count="6" type="stmt"/>
+      <line num="15" count="6" type="stmt"/>
+      <line num="27" count="6" type="stmt"/>
+      <line num="28" count="6" type="stmt"/>
+      <line num="29" count="6" type="stmt"/>
+      <line num="31" count="33" type="cond" truecount="2" falsecount="0"/>
+      <line num="32" count="33" type="stmt"/>
+      <line num="33" count="33" type="stmt"/>
+      <line num="36" count="0" type="stmt"/>
+      <line num="37" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="38" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="39" count="0" type="stmt"/>
+      <line num="40" count="0" type="stmt"/>
+      <line num="41" count="0" type="stmt"/>
+      <line num="50" count="1" type="stmt"/>
+    </file>
+    <file name="Updater.js" path="D:\MVVM_project\src\Updater.js">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="11" count="3" type="stmt"/>
+      <line num="20" count="5" type="stmt"/>
+    </file>
+    <file name="Watcher.js" path="D:\MVVM_project\src\Watcher.js">
+      <metrics statements="12" coveredstatements="11" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="3"/>
+      <line num="13" count="9" type="stmt"/>
+      <line num="14" count="9" type="stmt"/>
+      <line num="15" count="9" type="stmt"/>
+      <line num="17" count="9" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="27" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="29" count="0" type="stmt"/>
+      <line num="37" count="9" type="stmt"/>
+      <line num="38" count="9" type="stmt"/>
+      <line num="39" count="9" type="stmt"/>
+      <line num="40" count="9" type="stmt"/>
+    </file>
+    <file name="util.js" path="D:\MVVM_project\src\util.js">
+      <metrics statements="19" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>
+      <line num="7" count="11" type="stmt"/>
+      <line num="16" count="3" type="stmt"/>
+      <line num="25" count="6" type="stmt"/>
+      <line num="33" count="9" type="stmt"/>
+      <line num="43" count="20" type="stmt"/>
+      <line num="44" count="20" type="stmt"/>
+      <line num="45" count="20" type="stmt"/>
+      <line num="46" count="40" type="stmt"/>
+      <line num="48" count="20" type="stmt"/>
+      <line num="55" count="1" type="stmt"/>
+      <line num="63" count="4" type="stmt"/>
+      <line num="65" count="4" type="stmt"/>
+      <line num="66" count="4" type="stmt"/>
+      <line num="68" count="4" type="stmt"/>
+      <line num="78" count="1" type="stmt"/>
+      <line num="79" count="1" type="stmt"/>
+      <line num="80" count="1" type="stmt"/>
+      <line num="81" count="1" type="stmt"/>
+      <line num="83" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

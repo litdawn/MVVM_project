@@ -29,11 +29,11 @@ class Observer{
 		Object.defineProperty(data,key,{
 			get(){
 				Dep.target&&dep.addSubscriber(Dep.target);
-				console.log("target",Dep.target)
+				// console.log("target",Dep.target)
 				return value;
 			},
 			set(update){
-				console.log("set")
+				// console.log("set")
 				if(update!==value) {
 					if(isObject(update))
 						that.observe(update);
@@ -42,8 +42,7 @@ class Observer{
 				}
 			}
 		})
-
 	}
-
 }
+export default Observer;
 window.Observer = Observer;
