@@ -1,17 +1,20 @@
-import {isElementNode, isTextNode, isDirective} from "./util";
-import {CompilerUtil} from "./CompilerUtil";
+import {isElementNode, isTextNode, isDirective} from "./util.js";
+import {CompilerUtil} from "./CompilerUtil.js";
 
 class Compiler {
-    vm;
     el;
-    constructor(el,vm) {
+    vm;
+    constructor(vm) {
         this.vm=vm;
-        this.el = isElementNode(el)?this.el:document.querySelector(el);
+        this.el = isElementNode(vm.el)?vm.el:document.querySelector(vm.el);
         if(this.el){
             //元素存在
             let fragment = this.toFragment(this.el);
             this.compile(fragment);
             this.el.appendChild(fragment);
+            // fragment=null;
+            // el={}
+            // vm={}
         }
     };
 
@@ -22,7 +25,7 @@ class Compiler {
     toFragment(el){
         let fragment = document.createDocumentFragment();
         let childNode;
-        while(childNode = el.firstChild){
+        while((childNode = el.firstChild)!==null){
             fragment.appendChild(childNode);
         }
         return fragment;
@@ -69,15 +72,14 @@ class Compiler {
      * 编译文本：尤其是带{{}}的
      * @param node
      */
-    compileText(node:Node){
+    compileText(node){
         let textContent = node.textContent;
-        const textRE:RegExp = /{{([^{}])}}/g;
-        let varListInText = textRE.exec(textContent);
-        if(varListInText!==null){
-            console.log(varListInText)
-            CompilerUtil['text'](node,this.vm,varListInText[0])
+        let textRE = /{{([^}]+)}}/g;
+        if(textRE.test(textContent)){
+            CompilerUtil['text'](node,this.vm,textContent)
         }
     };
 
 }
 export default Compiler;
+window.Compiler = Compiler;

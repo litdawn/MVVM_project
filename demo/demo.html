@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script type="module" src="../src/Dmvvm.js"></script>
+    <script type="module" src="../src/Compiler.js"></script>
+    <script type="module" src="../src/CompilerUtil.js"></script>
+    <script type="module" src="../src/util.js"></script>
+    <script type="module" src="../src/Updater.js"></script>
+    <script type="module" src="../src/Observer.js"></script>
+    <script type="module" src="../src/Watcher.js"></script>
+
 </head>
 <body>
     <div id="app">
         <label>
             <input type="text" d-model="title.m">
         </label>
-        <div>{{title.m}}</div>
+        <div>{{title.m}} and {{title.n}}</div>
     </div>
-    <script type="typescript" src="src/D-MVVM.ts"></script>
-    <script type="typescript" src="src/Compiler.ts"></script>
-    <script type="typescript" src="src/CompilerUtil.ts"></script>
-    <script type="typescript" src="src/util.ts"></script>
-    <script type="typescript" src="src/Updater.ts"></script>
-    <script>
 
-        console.log("yes")
-        const vm=new D_MVVM({
-            el:'#app',
-            data:{
-                title:{
-                    m:'demo'
-                }
-            }
-        })
 
-    </script>
 
 </body>
+
 </html>
+<script type="module">
+    console.log("yes")
+    let myDemo = new Dmvvm({
+	    el: '#app',
+	    data: {
+		    title: {
+			    m: 'demo',
+                n: 'hhdd'
+		    }
+	    }
+    });
+	window.myDemo = myDemo;
+</script>

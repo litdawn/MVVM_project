@@ -1,4 +1,3 @@
-
 /**
  * 是否是元素节点
  * @param node
@@ -22,6 +21,12 @@ export function isDirective(name){
     return name.indexOf("d-")===0;
 }
 
+/**
+ * 是否为对象
+ */
+export function isObject(object){
+    return typeof object==='object';
+}
 
 /**
  * 解析{{}}中内容(特别是a.b.c嵌套后)
@@ -37,5 +42,20 @@ export function findValue(vm,expr){
     }
     return value;
 }
+
+/**
+ * 根据解析出的{{}}中的真实值，替换expression中的变量名
+ */
+const textRE =  /{{([^}]+)}}/g;
+export  function getTextValue(expressionWithDump,vm){
+    let expression = expressionWithDump;
+    let content;
+    while((content=textRE.exec(expressionWithDump))!==null){
+        expression = expression.replace("{{"+content[1]+"}}",findValue(vm,content[1]));
+    }
+    return expression;
+}
+
+
 
 
