@@ -23,6 +23,9 @@
 │
 ├─test
 │      unitTest.js
+│
+├─readme.md         //本文件
+│
 └─testcov.png       //报告截图
 ```
 ### 2.框架功能
