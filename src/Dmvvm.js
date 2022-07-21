@@ -11,7 +11,6 @@ class Dmvvm {
         if(this.el){
             //TODO 数据劫持
             new Observer(this.data);
-            //TODO 数据代理
             //TODO 模板编译
             new Compiler(this);
         }

@@ -48,17 +48,15 @@ export function findValue(vm,expr){
     return value;
 }
 
+
+
 /**
  * 正则寻找插值表达式内容
- * @type {RegExp}
- */
-const textRE =  /{{(.+?)}}/g;
-/**
- *
  * @param expressionWithDump{string}
  * @param vm {Object}
  * @return {string}
  */
+const textRE =  /{{(.+?)}}/g;
 export  function getTextValue(expressionWithDump,vm){
     let expression = expressionWithDump;
     let content;

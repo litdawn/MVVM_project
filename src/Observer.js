@@ -8,6 +8,9 @@ class Observer{
 		this.observe(data);
 	}
 
+	/**
+	 * @param data {Object} 某传入对象
+	 */
 	observe(data){
 		if(isObject(data)){
 			Object.keys(data).forEach(key=>{

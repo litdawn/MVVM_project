@@ -43,7 +43,7 @@ const CompilerUtil ={
         Updater['modelUpdater'](node,findValue(vm,expression));
     },
 
-    //TODO 待补充
+    //TODO 待补充其他类型指令
 
     // /**
     //  * d-html
